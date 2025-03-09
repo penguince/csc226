@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            document.getElementById("myh2").style.color = "red";
+        }
+
+        var redirect = function(){
+            console.log("you are on" + location.href)
+            location.href = "https://www.google.com"
+        }
+    </script>
+<style>
+  
+
+
+
+</style>
+</head>
+<body>
+    <button onclick = "myfunction()">finasief</button>
+    <br>
+    <h2  id = "myh2">world</h2>
+    <h4 class = "test">Hello</h4>
+
+    <table>
+        <tr>
+            <td>
+                <label> Name:
+                    <input type = "text" value = "">
+                </label>
+            </td>
+
+            <td>
+                <button onclick = "redirect()">right item</button>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label> Name:
+                    <input type = "text" value = "">
+                </label>
+            </td>
+
+            <td>
+                <button>right item</button>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label> Name:
+                    <input type = "text" value = "">
+                </label>
+            </td>
+
+            <td>
+                <button>right item</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
