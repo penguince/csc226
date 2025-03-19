@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #userInput {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        #resultArea {
+            margin-top: 15px;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Example</h1>
+    
+    <label for="userInput">Enter your text:</label>
+    <input type="text" id="userInput" placeholder="Type something...">
+    
+    <button id="submitButton" onclick="processInput()">Submit</button>
+    
+    <div id="resultArea"></div>
+    
+    <script>
+        function processInput() {
+            // Get the input value
+            const input = document.getElementById('userInput');
+            const inputValue = input.value;
+            
+            // Show what the user entered
+            const resultArea = document.getElementById('resultArea');
+            resultArea.textContent = "You entered: " + inputValue;
+            resultArea.style.display = "block";
+            
+            // Change the style of the input
+            input.style.backgroundColor = "#f0f8ff";
+            input.style.borderColor = "#4CAF50";
+            input.style.boxShadow = "0 0 5px rgba(76, 175, 80, 0.5)";
+        }
+    </script>
+</body>
+</html>
