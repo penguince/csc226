@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Event Listener Example</title>
+  <style>
+    /* CSS styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #myButton {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #myButton:hover {
+      background-color: #0056b3;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Event Listener Example</h1>
+  <button id="myButton">Click Me!</button>
+  <p id="message"></p>
+
+  <script>
+    // JavaScript to add an event listener to the button
+    const myButton = document.getElementById('myButton');
+    const message = document.getElementById('message');
+
+    // When the button is clicked, update the paragraph text and style
+    myButton.addEventListener('click', function() {
+      message.innerHTML = "Button was clicked!";
+      message.style.color = "green";
+    });
+  </script>
+</body>
+</html>
