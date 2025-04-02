@@ -1,0 +1,110 @@
+import requests
+
+# Send a GET request to an API endpoint
+response = requests.get('https://api.example.com/data')
+
+# Check if the request was successful (HTTP status code 200)
+if response.status_code == 200:
+    print("Request successful!")
+else:
+    print("Failed to retrieve data:", response.status_code)
+
+
+# Convert the response to a JSON object
+data = response.json()
+
+# Assume data is a list of dictionaries
+for item in data:
+    # Print a specific field, e.g., 'name'
+    print(item.get('name'))
+
+def print_field(data, field):
+    for item in data:
+        if field in item:
+            print(item[field])
+
+# Call the function with the JSON data and the field you want to print
+print_field(data, 'name')
+
+def print_field(data, field):
+    for item in data:
+        if field in item:
+            print(item[field])
+
+# Call the function with the JSON data and the field you want to print
+print_field(data, 'name')
+
+// Select an element by ID and add a click event listener
+document.getElementById('myButton').addEventListener('click', function() {
+    console.log('Button clicked!');
+});
+
+// Using querySelector to select the first element with a given class
+let element = document.querySelector('.myClass');
+
+let contentDiv = document.getElementById('content');
+// Read the content
+console.log(contentDiv.innerHTML);
+// Change the content
+contentDiv.innerHTML = '<p>New content here!</p>';
+
+// Change the background color of an element
+contentDiv.style.backgroundColor = 'lightblue';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTTP Requests
+GET vs POST:
+
+
+GET: Retrieves data from the server.
+
+
+POST: Sends data to the server (e.g., submitting form data).
+
+
+Status Codes: Numerical codes returned by the server to indicate the result of the request (e.g., 200 for success, 404 for not found).
+
+
+Client vs Server
+Client: The front-end (e.g., browser) making requests.
+
+
+Server: The back-end that processes requests and sends responses.
+
+
+Web Technologies
+HTML, CSS, JavaScript: Core technologies for building and styling web pages and adding interactivity.
+
+
+Reading Python Documentation
+Function Descriptions: When you encounter functions like join(), zip(), or set(), the documentation will detail:
+
+
+Purpose: What the function is designed to do.
+
+
+Parameters: What inputs it takes.
+
+
+Return Value: What type of output to expect.
+
+
+Examples: Code snippets that illustrate usage.
+
+
+
